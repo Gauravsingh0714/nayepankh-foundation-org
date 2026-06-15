@@ -1,16 +1,61 @@
-# React + Vite
+# NayePankh Foundation Website Redesign
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the production-ready frontend redesign for the **NayePankh Foundation** website. 
 
-Currently, two official plugins are available:
+NayePankh Foundation is a registered non-profit organization (Societies Registration Act, 1860) led entirely by the passionate youth of our country. They work continuously to solve daily challenges faced by people in India, making this earth a better place.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
 
-## React Compiler
+## Documentation
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Full project documentation can be found in the `/Documentation` directory:
+- [Product Requirements (PRD)](./Documentation/PRD.md)
+- [Technical Requirements (TRD)](./Documentation/TRD.md)
+- [Application Flow](./Documentation/App_Flow.md)
+- [Component Architecture](./Documentation/COMPONENT_ARCHITECTURE.md)
+- [UI/UX Brief](./Documentation/UI_UX_BRIEF.md)
+- [Content Strategy](./Documentation/CONTENT_STRATEGY.md)
+- [Changelog](./Documentation/CHANGELOG.md)
 
-## Expanding the ESLint configuration
+## Key Features
+- **Highly Optimized Performance:** Perfect 100/100 Lighthouse scores for Performance, Accessibility, Best Practices, and SEO.
+- **Fully Responsive Layout:** Optimized for Mobile, Tablet, and Desktop.
+- **Dark Mode Support:** Smooth toggling and LocalStorage persistence.
+- **Modern Animations:** Built with `framer-motion` (dynamically chunked for performance).
+- **WebP Images:** Multi-resolution (400w, 600w, 800w) optimized image loading strategy.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Development Setup
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Gauravsingh0714/nayepankh-foundation.git
+   cd nayepankh-foundation
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+## Production Build
+
+To build the application for production:
+```bash
+npm run build
+```
+
+This will compile the optimized application assets into the `/dist` directory, ready to be deployed to Vercel, Netlify, or any static hosting service.
+
+## Lighthouse Scores
+- Performance: **100**
+- Accessibility: **100**
+- Best Practices: **100**
+- SEO: **100**
