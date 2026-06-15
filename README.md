@@ -18,7 +18,6 @@ Full project documentation can be found in the `/Documentation` directory:
 - [Component Architecture](./Documentation/COMPONENT_ARCHITECTURE.md)
 - [UI/UX Brief](./Documentation/UI_UX_BRIEF.md)
 - [Content Strategy](./Documentation/CONTENT_STRATEGY.md)
-- [Changelog](./Documentation/CHANGELOG.md)
 
 ## Key Features
 - **Highly Optimized Performance:** Perfect 100/100 Lighthouse scores for Performance, Accessibility, Best Practices, and SEO.
