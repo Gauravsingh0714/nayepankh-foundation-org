@@ -32,8 +32,8 @@ Full project documentation can be found in the `/Documentation` directory:
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/Gauravsingh0714/nayepankh-foundation.git
-   cd nayepankh-foundation
+   git clone https://github.com/Gauravsingh0714/nayepankh-foundation-org.git
+   cd nayepankh-foundation-org
    ```
 
 2. **Install dependencies:**
