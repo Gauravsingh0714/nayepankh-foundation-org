@@ -1,0 +1,166 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Colors */
+  --color-primary: #9d4300;
+  --color-primary-container: #f97316;
+  --color-on-primary-container: #582200;
+  --color-on-primary: #ffffff;
+  
+  --color-secondary: #0051d5;
+  --color-secondary-container: #316bf3;
+  --color-on-secondary-container: #fefcff;
+  --color-on-secondary: #ffffff;
+  
+  --color-tertiary: #006398;
+  --color-tertiary-container: #00a2f4;
+  --color-on-tertiary-container: #003554;
+  --color-on-tertiary: #ffffff;
+  
+  --color-background: #fff8f6;
+  --color-background-dark: #0D0705;
+  --color-surface-light: #FFFFFF;
+  --color-surface-dark-elevation: #26201E;
+  
+  --color-success-green: #10B981;
+  --color-energy-yellow: #FBBF24;
+  --color-error: #ba1a1a;
+  
+  --color-surface-dim: #e3d8d4;
+  --color-surface-variant: #ece0dc;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #fef1ed;
+  --color-surface-container: #f8ebe8;
+  --color-surface-container-high: #f2e6e2;
+  --color-surface-container-highest: #ece0dc;
+  
+  --color-on-surface: #201a18;
+  --color-on-surface-variant: #584237;
+  --color-outline: #8c7164;
+  --color-outline-variant: #e0c0b1;
+
+  /* Fixed Colors */
+  --color-primary-fixed: #ffdbca;
+  --color-primary-fixed-dim: #ffb690;
+  --color-on-primary-fixed: #341100;
+  --color-on-primary-fixed-variant: #783200;
+  --color-secondary-fixed: #dbe1ff;
+  --color-secondary-fixed-dim: #b4c5ff;
+  --color-on-secondary-fixed: #00174b;
+  --color-on-secondary-fixed-variant: #003ea8;
+  --color-tertiary-fixed: #cde5ff;
+  --color-tertiary-fixed-dim: #93ccff;
+  --color-on-tertiary-fixed: #001d32;
+  --color-on-tertiary-fixed-variant: #004b74;
+
+  /* Font Families */
+  --font-display: "DM Sans", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+  --font-label: "Hanken Grotesk", sans-serif;
+
+  /* Spacing */
+  --spacing-margin-mobile: 20px;
+  --spacing-container-max-width: 1280px;
+  --spacing-margin-desktop: 64px;
+  --spacing-gutter-mobile: 16px;
+  --spacing-gutter-desktop: 24px;
+  --spacing-base: 8px;
+
+  /* Border Radius */
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+  --radius-2xl: 1.0rem;
+  --radius-3xl: 1.5rem;
+  --radius-full: 9999px;
+}
+
+/* Custom Utilities for the Typography System */
+@utility font-display-lg {
+  font-family: var(--font-display);
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@utility font-display-lg-mobile {
+  font-family: var(--font-display);
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+@utility font-headline-lg {
+  font-family: var(--font-display);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+}
+
+@utility font-headline-lg-mobile {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 700;
+}
+
+@utility font-title-md {
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+@utility font-body-lg {
+  font-family: var(--font-display);
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 400;
+}
+
+@utility font-body-md {
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+@utility font-label-md {
+  font-family: var(--font-label);
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+@utility font-caption {
+  font-family: var(--font-display);
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+
+/* Custom scroll bar styling for testimonial cards container on mobile */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Base Body Styles */
+body {
+  font-family: var(--font-body);
+  @apply bg-background text-on-surface;
+}
+
+.dark body {
+  @apply bg-background-dark text-surface-light;
+}
