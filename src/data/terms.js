@@ -6,7 +6,7 @@ export const termsAndConditions = {
       id: "1",
       title: "1. Introduction and Overview",
       paragraphs: [
-        "Welcome to NayePankh Foundation (“Foundation,” “we,” “us,” or “our”). These Terms and Conditions (“Terms”) govern your use of our website, services, donations, and subscription programs made available through www.nayepankh.com.",
+        "Welcome to NayePankh Foundation (“Foundation,” “we,” “us,” or “our”). These Terms and Conditions (“Terms”) govern your use of our website, services, donations, and subscription programs made available through nayepankh-foundation-org.netlify.app.",
         "By accessing our website, making a donation, or subscribing to our recurring donation program, you agree to be legally bound by these Terms. If you do not agree, you should immediately discontinue the use of our website and services.",
         "NayePankh Foundation is a registered non-profit organization under the Societies Registration Act, 1860, holding valid 12A and 80G certification under the Income Tax Act, 1961."
       ]
@@ -139,7 +139,7 @@ export const termsAndConditions = {
         "For questions regarding these Terms, please contact us at:",
         "📧 Email: contact@nayepankh.com",
         "📞 Phone: +91 8318500748",
-        "🌐 Website: www.nayepankh.com"
+        "🌐 Website: nayepankh-foundation-org.netlify.app"
       ]
     }
   ]

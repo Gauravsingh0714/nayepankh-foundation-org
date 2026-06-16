@@ -6,7 +6,7 @@ export const privacyPolicy = {
       id: "intro",
       title: "Introduction",
       paragraphs: [
-        "NayePankh Foundation (“Foundation,” “we,” “our,” “us”) is committed to protecting the privacy of every donor, supporter, volunteer, and visitor who engages with our website www.nayepankh.com.",
+        "NayePankh Foundation (“Foundation,” “we,” “our,” “us”) is committed to protecting the privacy of every donor, supporter, volunteer, and visitor who engages with our website nayepankh-foundation-org.netlify.app.",
         "This Privacy Policy outlines how we collect, use, store, and protect your information when you interact with our services, make donations, or subscribe to our programs.",
         "By accessing our website or providing your information for donations, you agree to the practices described in this Privacy Policy."
       ]
@@ -152,7 +152,7 @@ export const privacyPolicy = {
         "NayePankh Foundation",
         "📧 Email: contact@nayepankh.com",
         "📞 Phone: +91 8318500748",
-        "🌐 Website: www.nayepankh.com"
+        "🌐 Website: nayepankh-foundation-org.netlify.app"
       ]
     }
   ]

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.nayepankh.com/sitemap.xml
+Sitemap: https://nayepankh-foundation-org.netlify.app/sitemap.xml

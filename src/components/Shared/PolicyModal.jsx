@@ -131,7 +131,7 @@ export default function PolicyModal({ isOpen, onClose, policyData }) {
                           <>📞 Phone: <a href="tel:+918318500748" className="text-primary dark:text-primary-container hover:underline focus:outline-none focus:ring-1 focus:ring-primary rounded">+91 8318500748</a></>
                         )}
                         {hasWebsite && (
-                          <>🌐 Website: <a href="https://www.nayepankh.com" target="_blank" rel="noreferrer" className="text-primary dark:text-primary-container hover:underline focus:outline-none focus:ring-1 focus:ring-primary rounded">www.nayepankh.com</a></>
+                          <>🌐 Website: <a href="https://nayepankh-foundation-org.netlify.app/" target="_blank" rel="noreferrer" className="text-primary dark:text-primary-container hover:underline focus:outline-none focus:ring-1 focus:ring-primary rounded">nayepankh-foundation-org.netlify.app</a></>
                         )}
                       </p>
                     );
