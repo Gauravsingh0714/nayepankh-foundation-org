@@ -80,7 +80,10 @@ export default function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: encode({ "form-name": "contact", ...formData })
     })
-      .then(() => {
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
         toast.success("Thank you! Your message was sent successfully.", {
           id: toastId,
           duration: 5000,
@@ -285,5 +288,6 @@ export default function Contact() {
     </section>
   );
 }
+
 
 
