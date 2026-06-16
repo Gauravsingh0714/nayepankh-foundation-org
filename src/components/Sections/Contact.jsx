@@ -9,7 +9,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    subject: 'General Inquiry',
+    subject: '',
     message: ''
   });
   const [touched, setTouched] = useState({
@@ -88,7 +88,7 @@ export default function Contact() {
           id: toastId,
           duration: 5000,
         });
-        setFormData({ name: '', email: '', subject: 'General Inquiry', message: '' });
+        setFormData({ name: '', email: '', subject: '', message: '' });
         setTouched({ name: false, email: false, message: false });
       })
       .catch((error) => {
@@ -168,7 +168,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleInputChange}
                   onBlur={() => handleBlur('name')}
-                  placeholder="E.g., John Doe"
+                  placeholder="Enter your full name"
                   className={`w-full bg-surface-container-lowest dark:bg-background-dark border rounded-lg px-4 py-3 text-on-surface dark:text-surface-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-shadow ${
                     isNameInvalid 
                       ? 'border-error ring-1 ring-error/50' 
@@ -197,7 +197,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleInputChange}
                   onBlur={() => handleBlur('email')}
-                  placeholder="E.g., john@example.com"
+                  placeholder="yourname@example.com"
                   className={`w-full bg-surface-container-lowest dark:bg-background-dark border rounded-lg px-4 py-3 text-on-surface dark:text-surface-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-shadow ${
                     isEmailInvalid 
                       ? 'border-error ring-1 ring-error/50' 
@@ -227,6 +227,7 @@ export default function Contact() {
                   className="w-full bg-surface-container-lowest dark:bg-background-dark border border-outline-variant dark:border-white/10 rounded-lg px-4 py-3 text-on-surface dark:text-surface-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-shadow"
                   disabled={isSubmitting}
                 >
+                  <option value="" disabled>Select an inquiry category</option>
                   <option value="General Inquiry">General Inquiry</option>
                   <option value="Volunteering Opportunities">Volunteering Opportunities</option>
                   <option value="Student Internships">Student Internships</option>
@@ -246,7 +247,7 @@ export default function Contact() {
                   onChange={handleInputChange}
                   onBlur={() => handleBlur('message')}
                   maxLength={500}
-                  placeholder="Describe how we can help you..."
+                  placeholder="Tell us how we can help, support, collaborate, volunteer, or answer your question."
                   className={`w-full bg-surface-container-lowest dark:bg-background-dark border rounded-lg px-4 py-3 text-on-surface dark:text-surface-light focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary transition-shadow min-h-[120px] resize-y ${
                     isMessageInvalid 
                       ? 'border-error ring-1 ring-error/50' 
@@ -288,6 +289,7 @@ export default function Contact() {
     </section>
   );
 }
+
 
 
 
