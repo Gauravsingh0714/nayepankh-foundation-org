@@ -69,27 +69,35 @@ export default function Contact() {
     setIsSubmitting(true);
     const toastId = toast.loading("Sending your message...");
 
-    // Simulated API send
-    setTimeout(() => {
-      setIsSubmitting(false);
-      toast.success("Thank you! Your message was sent successfully to NayePankh Foundation.", {
-        id: toastId,
+    const encode = (data) => {
+      return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+    };
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...formData })
+    })
+      .then(() => {
+        toast.success("Thank you! Your message was sent successfully.", {
+          id: toastId,
+          duration: 5000,
+        });
+        setFormData({ name: '', email: '', subject: 'General Inquiry', message: '' });
+        setTouched({ name: false, email: false, message: false });
+      })
+      .catch((error) => {
+        console.error("Form submission error:", error);
+        toast.error("Oops! Something went wrong. Please try again.", {
+          id: toastId,
+          duration: 5000,
+        });
+      })
+      .finally(() => {
+        setIsSubmitting(false);
       });
-      console.log("Simulated Contact Submission Payload:", { name, email, subject, message });
-      
-      // Reset Form
-      setFormData({
-        name: '',
-        email: '',
-        subject: 'General Inquiry',
-        message: ''
-      });
-      setTouched({
-        name: false,
-        email: false,
-        message: false
-      });
-    }, 1500);
   };
 
   return (
@@ -277,3 +285,5 @@ export default function Contact() {
     </section>
   );
 }
+
+

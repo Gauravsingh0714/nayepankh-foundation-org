@@ -59,7 +59,7 @@ export default function Navbar({ theme, toggleTheme, onDonateClick }) {
               <a
                 key={link.label}
                 href={link.href}
-                className={`transition-all duration-200 focus:outline-none rounded px-1.5 py-0.5 ${
+                className={`whitespace-nowrap transition-all duration-200 focus:outline-none rounded px-1.5 py-0.5 ${
                   isActive
                     ? 'text-primary dark:text-primary-container font-bold border-b-2 border-primary dark:border-primary-container pb-1'
                     : 'text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-primary-container'
@@ -104,3 +104,4 @@ export default function Navbar({ theme, toggleTheme, onDonateClick }) {
     </nav>
   );
 }
+
